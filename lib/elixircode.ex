@@ -1,4 +1,4 @@
-defmodule Elixircode do
+defmodule ElixirCode do
   @moduledoc """
   Documentation for Elixircode.
   """
@@ -8,11 +8,13 @@ defmodule Elixircode do
 
   ## Examples
 
-      iex> Elixircode.hello
-      :world
+      iex> ElixirCode.hello_world
+      "Hello World"
 
   """
-  def hello do
-    :world
+  def hello_world do
+    IO.puts("Hello World")
   end
+
+
 end
