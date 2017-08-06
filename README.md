@@ -1,7 +1,5 @@
-# Elixircode
-
-My experiments with Elixir
+# Elixir Code Snippets
 
 ```elixir
-  IO.puts("Hello World")
+  ElixirCode.hello_world
 ```
