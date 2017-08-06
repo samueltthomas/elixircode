@@ -1,22 +1,7 @@
 # Elixircode
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixircode` to your list of dependencies in `mix.exs`:
+My experiments with Elixir
 
 ```elixir
-def deps do
-  [
-    {:elixircode, "~> 0.1.0"}
-  ]
-end
+
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixircode](https://hexdocs.pm/elixircode).
-
-# elixircode
