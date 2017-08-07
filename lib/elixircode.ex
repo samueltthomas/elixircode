@@ -1,6 +1,6 @@
 defmodule ElixirCode do
   @moduledoc """
-  Documentation for Elixircode.
+  Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
   """
 
   @doc """
@@ -13,8 +13,65 @@ defmodule ElixirCode do
 
   """
   def hello_world do
-    IO.puts("Hello World")
+    # <> String Concatenation Operator
+    # "#{var}" String Interpolation
+    greeting = "Hello"
+    IO.puts("#{greeting} "<>"World")
   end
+
+  @doc """
+
+  """
+
+  def arithmetic do
+    a = 250 + 470
+    b = a - 20
+    a = b * 10
+    a / 4
+    # div(a,2) # Integer Divison
+    # rem(a,3) # Remainder (modulo)
+  end
+
+  def typeof(var) do
+    cond do
+      is_boolean(var) -> "boolean" # true, false
+      is_atom(var) -> "atom" # :name
+      is_integer(var) -> "integer"
+      is_float(var) -> "float"
+      is_number(var) -> "number" # 2, 3.14
+      is_list(var) -> "list" # a = [1,2,3]
+      is_tuple(var) -> "tuple" # {:ok, "hello"}
+      is_map(var) -> "map"
+      is_function(var) -> "function"
+      true -> "undefined"
+    end
+  end
+
+
+  def map_ops do
+
+    # Maps are the “go to” key-value data structure in Elixir
+
+    user = %{
+      "name" => "John",
+      "age"=>20,
+      "address" => %{
+        "street" => "ABCD",
+        "state" => "EFGH"
+      },
+      salary: 100000 # When the key in a key-value pair is an atom, the key: value shorthand syntax can be used
+    }
+
+    user["address"]["street"]
+
+    user.salary #  map[key] will return nil if map doesn’t contain key, map.key will raise if map doesn’t contain the key :key.
+    user[:salary]
+
+    %{"name"=>name} = user # Pattern Matching
+    name
+
+  end
+
 
 
 end
