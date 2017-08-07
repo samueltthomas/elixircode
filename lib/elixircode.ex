@@ -1,4 +1,4 @@
-defmodule ElixirCode do
+defmodule EC do
   @moduledoc """
   Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
   """
@@ -8,7 +8,7 @@ defmodule ElixirCode do
 
   ## Examples
 
-      iex> ElixirCode.hello_world
+      iex> EC.hello_world
       "Hello World"
 
   """
@@ -16,11 +16,11 @@ defmodule ElixirCode do
     # <> String Concatenation Operator
     # "#{var}" String Interpolation
     greeting = "Hello"
-    IO.puts("#{greeting} "<>"World")
+    IO.puts("#{greeting} "<>"world from Elixir")
   end
 
   @doc """
-
+    Arithmetic Operations
   """
 
   def arithmetic do
@@ -47,6 +47,9 @@ defmodule ElixirCode do
     end
   end
 
+  @doc """
+    Map Operations
+  """
 
   def map_ops do
 
@@ -71,6 +74,26 @@ defmodule ElixirCode do
     name
 
   end
+
+  @doc """
+    List Operations
+  """
+
+  def list_ops do
+
+    list = [1,2,3]
+
+    # Comprehension - syntactic sugar to loop over an Enumerable
+    s = for l <- list do
+        IO.puts(l)
+        l * 20
+    end
+
+    s
+
+
+  end
+
 
 
 
