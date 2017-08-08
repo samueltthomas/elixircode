@@ -81,19 +81,34 @@ defmodule EC do
 
   def list_ops do
 
+    # Lists are stored in memory as linked lists
+
     list = [1,2,3]
 
+    # hd(list)  # Head 1
+    # tl(list)  # Tail [2,3]
+
     # Comprehension - syntactic sugar to loop over an Enumerable
-    s = for l <- list do
-        IO.puts(l)
-        l * 20
-    end
+    # list = for l <- list do
+        # IO.puts(l)
+        # l * 20
+    # end
 
-    s
 
+    # list ++ [4,5,6] # List Concatenation
+    # list -- [40] # List Substraction
+
+    # Enum.count(list) # Returns the size of the enumerable.
+
+    # Enum.empty?(list) # Determines if the list is empty. Returns true or false
+    # Enum.member?(list,20) # Checks if element exists
+    # Enum.reverse(list)  # Returns the elements in reverse order.
+    # Enum.random(list) # Returns a random element
+
+    # Enum.shuffle(list) # Returns a list with the elements shuffled.
+    
 
   end
-
 
 
 
