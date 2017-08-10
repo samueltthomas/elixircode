@@ -106,10 +106,30 @@ defmodule EC do
     # Enum.random(list) # Returns a random element
 
     # Enum.shuffle(list) # Returns a list with the elements shuffled.
-    
+
 
   end
 
+  def tuple_ops do
+
+    # Tuples are ordered collections of elements
+    # Tuples store elements contiguously in memory
+
+    tuple = {1, :two, "three"}
+
+    # elem(tuple, 0) # 1 Index is 0 based
+    tuple_size(tuple) #3
+
+    tuple = tuple|>Tuple.append(4) # Inserts an element at the end of a tuple.
+    tuple = tuple|>Tuple.delete_at(2) # Deletes the element at the given index from tuple
+
+    tuple = tuple|>Tuple.insert_at(2,:three) # Inserts value into tuple at the given index
+
+    tuple|>Tuple.to_list() # Converts a tuple to a list
+
+    #  A common pattern is for functions to return {:ok, value} for successful cases and {:error, reason} for unsuccessful cases eg. FiLe.read
+
+  end
 
 
 end
