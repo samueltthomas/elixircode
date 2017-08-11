@@ -132,4 +132,29 @@ defmodule EC do
   end
 
 
+  def string_fns do
+
+    # A String in Elixir is a UTF-8 encoded binary.
+
+    string = "Elixir"
+    # String.length(string)
+
+    # string |> String.upcase
+    # string |> String.downcase
+    # string |> String.capitalize
+    # string |> String.trim
+    # string |> String.reverse
+
+    # string = "1,2,3";
+    # string |> String.split(",")
+
+    # String.replace("a,b,c", ",", "-")
+
+    # string |> String.contains?  "i"
+    # string |> String.starts_with? "E"
+    # string |> String.ends_with? "r"
+    
+
+  end
+
 end
